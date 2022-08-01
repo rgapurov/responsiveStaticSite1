@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="HTML formları ile ilgili bilgilendirme">
+	<meta name="keywords" content="html, form, input">
+	<title>HTML Formları</title>
+</head>
+<body>
+	<h1>bootstrap formları</h1>
+	<a href="2201.html">tıklayınız</a>
+	<h1>HTML Formları</h1>
+	
+
+	<form action="formlar.html" method="multipart/form-data">
+		<fieldset>
+			<legend>Kayıt Formu</legend>
+			<p>
+			<label for="kullanici">Kullanıcı Adınız*:</label>
+			<input type="text" required name="kullanici_adi" id="kullanici">
+			</p>
+			
+			<p>
+			<label for="sifre">Şifreniz*:</label>
+			<input type="password" required name="sifrem" id="sifre">
+			</p>
+			
+			<p>
+			<label for="yas">Yaşınız:</label>
+			<input type="number" name="yasiniz" id="yas">
+			</p>
+			
+			<p>
+			<label for="email">E-Posta Adresiniz*:</label>
+			<input type="email" name="eposta" required id="email">
+			</p>
+
+			<p>
+			Cinsiyetiniz:
+			<label for="erkek">Erkek</label>
+			<input type="radio" name="cinsiyet" id="erkek">
+			<label for="kadin">Kadın</label>
+			<input type="radio" name="cinsiyet" id="kadin">
+			<label for="belirtmedi">Belirtmek istemiyorum</label>
+			<input type="radio" name="cinsiyet" checked="checked" id="belirtmedi">
+			</p>
+			
+			<p>
+				<label for="egitimduzeyi">Eğitim düzeyiniz:</label>
+				<select name="egitim" id="egitimduzeyi">
+					<option value="0">Seçiniz</option>
+					<option value="1">İlköğretim</option>
+					<option value="2">Lise</option>
+					<option value="3">Yükseköğretim</option>
+				</select>
+			</p>
+
+			<p>
+			<label for="gorsel">Kullanıcı görseli:</label>
+			<input type="file" name="avatar" id="gorsel">
+			</p>
+			
+			<p>
+				<label for="renk">Hesap rengi:</label>
+				<input type="color" name="hesap_rengi" id="renk">
+			</p>
+
+			<section>
+				<h2>Kullanıcı sözleşmesi</h2>
+				<p>
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ratione cupiditate ad, consequuntur nam tenetur molestias nisi doloribus nobis, esse labore excepturi ducimus voluptatum velit. Rerum voluptatum cumque repellendus expedita!</span>
+					<span>Adipisci vel dolore deserunt, exercitationem, facilis ad inventore ipsum quod, maiores harum facere repellendus aliquid? Ipsam enim accusamus voluptate, tempore amet, voluptatem odit, eveniet libero incidunt ea fuga vitae ullam?</span>
+					<span>Sed ea fuga officia, recusandae dolores facilis, quidem earum illo, laudantium quis autem consequatur iste. Deserunt, blanditiis dolor ratione aspernatur modi, praesentium nihil nam soluta laboriosam quos ipsa repellendus pariatur.</span>
+				</p>
+			</section>
+
+			<p>
+				<label for="kabulet">Kullanıcı sözleşmesini kabul ediyorum*:</label>
+				<input type="checkbox" required name="kabul" id="kabulet">
+			</p>
+
+			<p><input type="submit" value="Gönder"></p>
+			<p>* ile işaretlenen alanların doldurulması zorunludur.</p>
+		</fieldset>
+	</form>
+</body>
+</html>

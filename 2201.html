@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <article class="container border "> 
+        <h1> Bootstrap Formları</h1>
+    <form class="bordered" action="2201.html" method="GET">
+
+            <p>
+                <label for="email">E-Posta Adresiniz*:</label>
+                <input type="email" name="eposta" required="" id="email">
+            </p>
+
+            <p>
+                <label for="sifre">Şifreniz*:</label>
+                <input type="password" required="" name="sifrem" id="sifre">
+            </p>
+            
+               
+            <p><input type="submit" value="Gönder"></p>
+    </form>
+    
+    <h1 class="mt-5">form-label form-control</h1>
+    <form  class="border " action="2201.html" method="GET">
+
+        <p>
+            <label class="form-label" for="email">E-Posta Adresiniz*:</label>
+            <input placeholder="Bu alan gereklidir" class="form-control" type="email" name="eposta" required="" id="email">
+        </p>
+
+        <p>
+            <label class="form-label" for="sifre">Şifreniz*:</label>
+            <input class="form-control" type="password" required="" name="sifrem" id="sifre">
+        </p>
+        <span class="form-text">Şifreniz en az 8 karakter olmalıdır</span>
+           
+        <p class="mt-4"><input type="submit" value="Gönder"></p>        
+</form>
+
+<h1 class="mt-5">renkli buton</h1>
+    <form  action="2201.html" method="GET">
+
+        <div class="m-1 row">
+            <div class=" col-sm-3 ">
+                <label class="form-label" for="email">E-Posta Adresiniz*:</label>
+            </div>
+           <div class="col-sm-9">
+            <input placeholder="Bu alan gereklidir" class="form-control" type="email" name="eposta" required="" id="email">
+           </div>
+            
+        </div>
+
+        <div class="m-1 row">
+            <div class=" col-sm-3">
+                <label class="form-label" for="sifre">Şifreniz*:</label>
+            </div>
+           <div class="col-sm-9">
+            <input class="form-control" type="password" required="" name="sifrem" id="sifre">
+            
+           </div>
+           <span class="form-text offset-sm-3">Şifreniz en az 8 karakter olmalıdır</span>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-success" type="submit">Gönder</button>
+        </div>        
+</form>
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
